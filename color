@@ -1,0 +1,17 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(100);
+  colorMode(HSB);
+  //stroke(random(255), 10, 100);
+  
+  
+  //ellipse(x, y);
+
+  for (var x = 100; x < width-20; x = x + 8) {
+    stroke(random(255), 100, 100);
+    line(x, height/2, mouseX, mouseY);
+  }
+}
